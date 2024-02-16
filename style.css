@@ -1,0 +1,217 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Protest+Strike&display=swap');
+
+
+/* **********HEADER*********** */
+
+header {
+
+  background: linear-gradient(50deg, yellow, rgb(236, 234, 140));  
+}
+.header__icon{
+  width: 25%;
+  
+}
+.header__contact{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+
+}
+.header__contact div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.header__contact-title{
+  font-family: "Protest Strike", sans-serif;
+  font-size: 1.5em;
+  margin: 0;
+  top: 0;
+}
+.header__contact-phone{
+  font-family: "Protest Strike", sans-serif;
+  font-size: 2.2em;
+  margin: 0;
+}
+.header__icon-phone{
+  width: 30%;
+  
+}
+.header__nav-list {
+  font-family: "Protest Strike", sans-serif;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end; 
+  padding: auto;
+  margin: auto;
+}
+
+.header__nav{
+  width: 100%;
+}
+
+.header__nav-item {
+  list-style: none;
+  margin: 7px;
+  background-color: transparent;
+  border: none;
+  margin-right: 5em;
+  padding: 0;
+}
+
+.header__nav-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.header__nav-link:hover {
+  color: #999860;
+}
+
+
+.div__icon {
+  display: flex;
+  justify-items: flex-end;
+}
+
+
+
+/************** CONTENIDO SECTION ***************/
+.order-details
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.order-details-first{
+  display: flex;
+  align-items: center;
+}
+.order-details-second{
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.order-details__icon-plate{
+  width: 60%;
+}
+
+
+.order-details__title-1
+{
+  font-family: "Protest Strike", sans-serif;
+  font-size: 3em;
+}
+
+.order-details__icon{
+  width: 10em;
+}
+
+/* **********Section********** */
+
+
+.enjoy{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.enjoy__title{
+  font-family: "Handjet", sans-serif;
+  font-size: 5em;
+}
+.enjoy__paragraph{
+  font-family: "Ubuntu", sans-serif;
+  width: 50%;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.choose{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.chose div{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.choose__paragraph {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
+  text-align: center;
+  
+}
+.choose__button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+}
+
+.options-slider{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.options-slider__title{
+    font-family: "Handjet", sans-serif;
+  font-size: 2em;
+  margin: 20px;
+}
+.options-slider__title-2{
+  font-family: "Handjet", sans-serif;
+  font-size: 4em;
+  margin: 20px;
+}
+.options-slider__paragraph{
+    font-family: "Ubuntu", sans-serif;
+  width: 50%;
+  font-size: 1.3em;
+  text-align: center;
+  
+}
+
+.options-slider div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recomendations__icon{
+  width: 50em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
