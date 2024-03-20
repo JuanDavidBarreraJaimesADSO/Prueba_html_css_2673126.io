@@ -7,11 +7,15 @@
 /* **********HEADER*********** */
 
 header {
-
-  background: linear-gradient(50deg, yellow, rgb(236, 234, 140));  
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  background: linear-gradient(90deg, yellow, rgb(236, 234, 140));  
+  
 }
 .header__icon{
   width: 25%;
+  margin-right: 20px;
   
 }
 .header__contact{
@@ -21,25 +25,26 @@ header {
   height: 150px;
 
 }
-.header__contact div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
+.header__contact-info {
+  display: flex;
+  align-items: center;
+  width: 30%;
 }
+
+
 .header__contact-title{
   font-family: "Protest Strike", sans-serif;
-  font-size: 1.5em;
-  margin: 0;
-  top: 0;
+  font-size: 1.2em;
+  margin-right: 120px;
 }
 .header__contact-phone{
   font-family: "Protest Strike", sans-serif;
-  font-size: 2.2em;
+  font-size: 2.0em;
   margin: 0;
 }
 .header__icon-phone{
-  width: 30%;
+  width: 16%;
   
 }
 .header__nav-list {
@@ -86,36 +91,89 @@ header {
 .order-details
 {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
+
 
 }
+
 .order-details-first{
   display: flex;
   align-items: center;
-}
-.order-details-second{
-    display: flex;
-  align-items: center;
   flex-direction: column;
+  margin-left: 4em;
+  width: 30%;
 }
 
 .order-details__icon-plate{
-  width: 60%;
+  width: 100%;
 }
 
+.order-details__icon[src="img/pasta.png"]{
+  position: absolute; 
+  width: 10em;
+  right: 40%;
+  top: 30%; 
+}
+
+.order-details__icon[src="img/hoja2.png"]{
+  position: absolute; 
+  width: 10em;
+  right: 0;
+  top: 90%; 
+}
+
+.order-details__icon[src="img/tomate.png"]{
+  position: absolute; 
+  width: 10em;
+  right: 40%;
+  top: 100%; 
+}
+.order-details__icon[src="img/hoja.png"]{
+  position: absolute; 
+  width: 10em;
+  left: 10%; 
+  top: 27%; 
+}
+
+.order-details__icon[src="img/pasta2.png"] {
+  position: absolute; 
+  width: 32em;
+  left: -13%; 
+  top: 80%; 
+  
+}
 
 .order-details__title-1
 {
   font-family: "Protest Strike", sans-serif;
+  font-size: 2em;
+}
+.order-details__title-2{
   font-size: 3em;
+}
+
+.order-details__title-3{
+  font-size: 1.3em;
 }
 
 .order-details__icon{
   width: 10em;
 }
 
-/* **********Section********** */
+.order-details__butoon {
+  background-color: transparent; 
+  border: 2px solid black; 
+  color: black; 
+  padding: 10px 20px; 
+}
+
+.order-details__button:hover {
+  background-color: black; 
+  color: white; 
+}
+
+
+/* *****************************Section ENJOY******************************* */
 
 
 .enjoy{
@@ -128,24 +186,20 @@ header {
   font-family: "Handjet", sans-serif;
   font-size: 5em;
 }
-.enjoy__paragraph{
+.paragraph{
   font-family: "Ubuntu", sans-serif;
   width: 50%;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center;
 }
 
 .choose{
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-}
-.chose div{
-   display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 
 }
+
 .choose__paragraph {
   font-family: "Ubuntu", sans-serif;
   font-size: 1em;
@@ -153,9 +207,6 @@ header {
   
 }
 .choose__button{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: yellow;
   color: black;
   font-weight: bold;
@@ -163,6 +214,7 @@ header {
   border: none;
   padding: 10px 20px;
   font-size: 1.2em;
+  width: auto;
 }
 
 .options-slider{
@@ -172,17 +224,17 @@ header {
   margin: 0;
 }
 
-.options-slider__title{
+.title{
     font-family: "Handjet", sans-serif;
   font-size: 2em;
   margin: 20px;
 }
-.options-slider__title-2{
+.title-2{
   font-family: "Handjet", sans-serif;
   font-size: 4em;
   margin: 20px;
 }
-.options-slider__paragraph{
+.paragraph{
     font-family: "Ubuntu", sans-serif;
   width: 50%;
   font-size: 1.3em;
@@ -192,26 +244,194 @@ header {
 
 .options-slider div{
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-.recomendations__icon{
-  width: 50em;
+.recomendations__scroll {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+
+.recomendations__icon {
+  margin: -2em; 
+  width: 36%;
+}
+
+
+.selection-circles {
+  margin-top: 10px;
+}
+
+.circle  {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray; 
+  margin: 0 5px; 
+}
+
+
+.circle.active {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray; 
+  margin: 0 5px; 
+  background-color: yellow;   
 }
 
 
 
 
+/* *****************************Section RECOMENDACIONES ******************************* */
+
+.reservation{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.recomendations {
+  display: flex;
+}
+
+.recomendations__item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+ 
+}
+
+.recomendations__icons {
+  margin-top: 6.5em; 
+}
+
+.recomendations__icon-2 {
+  margin-top: 2em;
+
+}
+
+.recomendations__icon-3 {
+  margin-top: -14em;
+
+}
 
 
 
+/* *****************************Section RESERVATION ******************************* */
+/* .reservation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservation__title{
+  font-family: "Handjet", sans-serif;
+  font-size: 2em;
+}
+.reservation__title-2{
+  font-family: "Handjet", sans-serif;
+  font-size: 4em;
+}
+
+.reservation__form {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto); 
+  grid-row-gap: 10px; 
+  grid-column-gap: 20px;
+  align-items: center; 
+}
+
+
+.reservation__form label,
+.reservation__form input {
+  margin-bottom: 10px; 
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  width: 10em;
+  
+}
+
+.reservation__form input{
+border: 2px solid black; 
+} 
+
+.reservation__form button {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  width: 50%;
+  grid-column: span 4;
+}
+ */
 
 
 
+ .reservation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.reservation__form {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.reservation__form label {
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.reservation__form input,
+.reservation__form select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.reservation__button {
+  width: 100%;
+  padding: 15px 32px;
+  background-color: yellow;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
 
+/* ************************FOOOTER*********************** */
 
-
-
-
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  background-image: url('/img/ultimo.PNG');
+  background-size: cover;
+  align-items: center;
+  width: 100%;
+  height: 60vh;;
+  
+}
